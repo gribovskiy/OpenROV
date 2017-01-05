@@ -39,7 +39,7 @@ def callback_control(navdata):
     
     print navdata.heading,navdata.roll,navdata.pitch,navdata.yaw, loop_plot
 
-    #Shift from 1, as the new value will pu out
+    #Shift from 1, as the new value will come
     heading=np.roll(heading,-1) 
     roll=np.roll(roll,-1)
     pitch=np.roll(pitch,-1)
